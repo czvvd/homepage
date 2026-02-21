@@ -9,6 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      .pub-toggle {
+        margin-top: 8px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+      }
+      .pub-btn {
+        font-size: 15px;
+        padding: 8px 16px;
+        border: 1px solid #d1d5db;
+        background: #f3f4f6;
+        color: #374151;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .pub-btn:hover {
+        background: #e5e7eb;
+        border-color: #cbd5f5;
+      }
+      .pub-btn.active {
+        background: #1d4ed8;
+        color: #fff;
+        border-color: #1d4ed8;
+        box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
+      }
+    </style>
     
   </head>
 
@@ -64,6 +93,10 @@
         <tr>
           <td style="padding:16px;width:100%;vertical-align:middle">
             <h2>Publications</h2>
+            <div class="pub-toggle">
+              <button class="pub-btn active" type="button" onclick="showPublications('selected')">Selected Publications</button>
+              <button class="pub-btn" type="button" onclick="showPublications('all')">All Publications</button>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -72,6 +105,174 @@
   
   
   
+<div id="selected-publications">
+  <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/PartSAM_teaser.png' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2509.21965">
+          <span class="papertitle">PartSAM: A Scalable Promptable Part Segmentation Model Trained on Native 3D Data</span>
+        </a>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Le Wan,
+				Rui Xu,
+        Yiheng Zhang, 
+        Honghua Chen, 
+        Zhiyang Dou,
+        Cheng Lin,
+		    Yuan Liu†,
+        Mingqiang Wei†
+        <br>
+        <em>International Conference on Learning Representations (<strong>ICLR</strong>)</em>, 2026
+        <br>
+        <a href="https://czvvd.github.io/PartSAMPage/">Project Page</a>
+        /
+        <a href="https://github.com/czvvd/PartSAM">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/coreeditor.png' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2508.11603">
+          <span class="papertitle">CoreEditor: Consistent 3D Editing via Correspondence-constrained Diffusion</span>
+        </a>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Honghua Chen†,
+        Peng Li,
+        Mingqiang Wei
+        <br>
+        <em>IEEE Transactions on Visualization and Computer Graphics (<strong>TVCG</strong>)</em>, vol. 32, no. 3, pp. 2838-2851, 2026.
+        <br>
+       <a href="https://github.com/czvvd/CoreEditor">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/genpc.png' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2502.19896">
+          <span class="papertitle">GenPC: Zero-shot Point Cloud Completion via 3D Generative Priors</span>
+        </a>
+        <br>
+        An Li*
+        <strong>Zhe Zhu*</strong>,
+        Mingqiang Wei†
+        <br>
+        <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2025.
+        <br>
+        <a href="https://github.com/liannuaa/GenPC">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/pointsea.png' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2502.17053?">
+          <span class="papertitle">PointSea: Point Cloud Completion via Self-structure Augmentation</span>
+        </a>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Honghua Chen†,
+        Xing He,
+        Mingqiang Wei†
+        <br>
+        <em> International Journal of Computer Vision (<strong>IJCV</strong>)</em>, vol. 133, no. 7, pp. 4770-4794, 2025.
+        <br>
+        <a href="https://github.com/czvvd/SVDFormer_PointSea">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/svdformer.png' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2307.08492">
+          <span class="papertitle">SVDFormer: Complementing Point Cloud via Self-view Augmentation and Self-structure Dual-generator</span>
+        </a>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Honghua Chen,
+        Xing He,
+        Weiming Wang†,
+        Jing Qin,
+        Mingqiang Wei†
+        <br>
+        <em>IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2023.
+        <br>
+        <a href="https://github.com/czvvd/SVDFormer_PointSea">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/csdn.jpg' width=100%>
+        </div>
+        
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2206.04665">
+          <span class="papertitle">CSDN: Cross-modal shape-transfer dual-refinement network for point cloud completion</span>
+        </a>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Liangliang Nan,
+        Haoran Xie,
+        Honghua Chen†,
+        Jun Wang,
+        Mingqiang Wei†,
+        Jing Qin
+        <br>
+        <em>IEEE Transactions on Visualization and Computer Graphics (<strong>TVCG</strong>)</em>, vol. 30, no. 7, pp. 3545-3563, 2024.
+        <br>
+        <a href="https://github.com/czvvd/CSDN">Code</a>
+        <p></p>
+      </td>
+    </tr>
+
+  </tbody></table>
+</div>
+
+<div id="all-publications" style="display:none;">
 <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
@@ -440,6 +641,7 @@
     </tr>
 
 </tbody></table>
+</div>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
@@ -481,5 +683,23 @@
         </td>
       </tr>
     </table>
+    <script>
+      function showPublications(type) {
+        const selected = document.getElementById('selected-publications');
+        const all = document.getElementById('all-publications');
+        const buttons = document.querySelectorAll('.pub-btn');
+        if (type === 'all') {
+          selected.style.display = 'none';
+          all.style.display = 'block';
+          buttons[0].classList.remove('active');
+          buttons[1].classList.add('active');
+        } else {
+          selected.style.display = 'block';
+          all.style.display = 'none';
+          buttons[0].classList.add('active');
+          buttons[1].classList.remove('active');
+        }
+      }
+    </script>
   </body>
 </html>
