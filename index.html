@@ -7,64 +7,35 @@
 
     <meta name="author" content="Zhe Zhu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-missing.ico?v=2">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-      .pub-toggle {
-        margin-top: 8px;
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        /* justify-content: center; */
-      }
-      .pub-btn {
-        font-size: 15px;
-        padding: 8px 16px;
-        border: 1px solid #d1d5db;
-        background: #f3f4f6;
-        color: #374151;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
-      .pub-btn:hover {
-        background: #e5e7eb;
-        border-color: #cbd5f5;
-      }
-      .pub-btn.active {
-        background: #1d4ed8;
-        color: #fff;
-        border-color: #1d4ed8;
-        box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
-      }
-    </style>
-    
   </head>
 
-  <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <body class="homepage">
+    <div class="page-shell">
+    <table class="layout-shell" style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="hero-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td class="hero-bio" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Zhe Zhu 朱哲
                 </p>
-                <p>
+                <p class="intro-text">
                 I am a Ph.D student at Nanjing University of Aeronautics and Astronautics, supervised by <a href="https://scholar.google.com/citations?user=TdrJj8MAAAAJ&hl=en">Prof. Mingqiang Wei</a>. Meanwhile, I work closely with <a href="https://chenhonghua.github.io/clay.github.io/">Prof. Honghua Chen</a>.
                 Currently I am a research intern at Tencent IEG, collaborating with <a href="https://liuyuan-pal.github.io/">Prof. Yuan Liu</a>, <a href="https://clinplayer.github.io/">Prof. Cheng Lin</a>, and <a href="https://openreview.net/profile?id=~Le_Wan1">Mr. Le Wan</a>. My research interests are 3D Vision, Computer Graphics, and AIGC. 
-                
+                </p>
 
                 
-                <p style="text-align:center">
+                <p class="hero-links" style="text-align:center">
                   <a href="mailto:zhuzhe0619@nuaa.edu.cn">Email</a> &nbsp;/&nbsp;
                   <a href="data/CV_Zhe_Zhu.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=pM4ebg0AAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/czvvd">Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:20%;max-width:20%">
+              <td class="hero-photo-cell" style="padding:2.5%;width:20%;max-width:20%">
                 <a href="images/selfie/zhuzhe.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 5%;" alt="profile photo" src="images/selfie/zhuzhe.jpg" class="hoverZoomLink"></a>
               </td>
               
@@ -73,7 +44,7 @@
           </table>
 
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr>
           <td style="padding:16px;width:100%;vertical-align:middle">
@@ -89,7 +60,7 @@
     </table>
 
   
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr>
           <td style="padding:16px;width:100%;vertical-align:middle">
@@ -106,16 +77,14 @@
   
   
   
-<div id="selected-publications">
-  <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<div id="selected-publications" class="pub-panel">
+  <table class="publication-list" style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
       <td style="padding:16px;width:30%;vertical-align:middle">
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/PartSAM_teaser.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2509.21965">
@@ -146,8 +115,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/coreeditor.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2508.11603">
@@ -171,8 +138,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/genpc.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2502.19896">
@@ -195,8 +160,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/pointsea.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2502.17053?">
@@ -220,8 +183,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/svdformer.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2307.08492">
@@ -247,8 +208,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/csdn.jpg' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2206.04665">
@@ -273,16 +232,14 @@
   </tbody></table>
 </div>
 
-<div id="all-publications" style="display:none;">
-<table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<div id="all-publications" class="pub-panel" style="display:none;">
+<table class="publication-list" style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
       <td style="padding:16px;width:30%;vertical-align:middle">
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/quadlink.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
           <span class="papertitle">QuadLink: Autoregressive Quad-Dominant Mesh Generation via Point-Relation Learning</span>
@@ -313,8 +270,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/PartSAM_teaser.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2509.21965">
@@ -345,8 +300,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/meshmosaic.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2509.19995">
@@ -380,8 +333,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/Bridgeshape.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2506.23205">
@@ -405,8 +356,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/bsgs.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2510.12493">
@@ -430,8 +379,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/coreeditor.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2508.11603">
@@ -455,8 +402,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/CosCAD.jpg' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://link.springer.com/chapter/10.1007/978-981-96-5812-1_19">
@@ -482,8 +427,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/genpc.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2502.19896">
@@ -506,8 +449,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/pointsea.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2502.17053?">
@@ -531,8 +472,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/pointsfda.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2503.15144">
@@ -558,8 +497,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/svdformer.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2307.08492">
@@ -585,8 +522,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/agconv.png' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2206.04665">
@@ -618,8 +553,6 @@
         <div style="width:100%; display:flex; align-items:center;justify-content:center;">
           <img src='images/publication/csdn.jpg' width=100%>
         </div>
-        
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2206.04665">
@@ -644,46 +577,24 @@
 </tbody></table>
 </div>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr>
           <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2>Services</h2>
-            <p>Program Committee: PG 2025</p>
+            <h2>Services</h2>\
             <p>Journal Reviewer: TPAMI, IJCV, TVCG, TIP, TMM, RA-L, Neural Networks, Neurocomputing, EAAI</p>
-            <p>Conference Reviewer: CVPR, ICCV, ICLR, NeurIPS, MM</p>
+            <p>Conference Reviewer/Program Committee: CVPR, ICCV, ECCV, ICLR, NeurIPS, MM, PG</p>
           </td>
         </tr>
       </tbody>
     </table>
-
-    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr>
-          <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2>Honors & Awards</h2>
-            <p>Best Paper Nomination, CCF CAD/CG 2025</p>
-            <p>Suzhou Industrial Park Scholarship, 2024</p>
-          </td>
-        </tr>
-      </tbody>
-    </table> -->
 
   
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  This page is adapted from this <a href="https://github.com/jonbarron/jonbarron_website">template</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table> 
         </td>
       </tr>
     </table>
+    </div>
     <script>
       function showPublications(type) {
         const selected = document.getElementById('selected-publications');
