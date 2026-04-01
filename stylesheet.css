@@ -64,16 +64,17 @@
 }
 
 :root {
-  --bg: #eef3f8;
-  --bg-soft: #f8fbff;
-  --text: #1a2b3a;
-  --muted: #4c5f70;
-  --line: #d6e0ea;
-  --accent: #0f6cbf;
-  --accent-strong: #0c4d89;
+  --bg: #f0f0f5;
+  --bg-soft: #f8f7fc;
+  --text: #1e1e2e;
+  --muted: #5e5e72;
+  --line: #dddde5;
+  --accent: #6c5ce7;
+  --accent-strong: #5a4bd6;
+  --accent-secondary: #00b894;
   --card: #ffffff;
   --radius: 16px;
-  --shadow: 0 14px 30px rgba(17, 41, 66, 0.08);
+  --shadow: 0 14px 30px rgba(60, 40, 100, 0.08);
 }
 
 * {
@@ -95,8 +96,8 @@ strong {
 body.homepage {
   margin: 0;
   background:
-    radial-gradient(circle at 12% -8%, #d8ebff 0, transparent 44%),
-    radial-gradient(circle at 88% 0%, #d9f3f0 0, transparent 40%),
+    radial-gradient(circle at 12% -8%, #e4dff8 0, transparent 44%),
+    radial-gradient(circle at 88% 0%, #d4f5ee 0, transparent 40%),
     var(--bg);
   line-height: 1.65;
 }
@@ -114,7 +115,7 @@ body.homepage {
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.22s ease;
+  transition: color 0.15s ease;
 }
 
 a:focus,
@@ -136,7 +137,7 @@ h2::after {
   height: 3px;
   border-radius: 999px;
   margin-top: 8px;
-  background: linear-gradient(90deg, #1884d3 0%, #37b7a9 100%);
+  background: linear-gradient(90deg, #6c5ce7 0%, #00b894 100%);
 }
 
 .hero-section {
