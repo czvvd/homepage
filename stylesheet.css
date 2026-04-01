@@ -219,6 +219,18 @@ h2::after {
   margin: 8px 0;
 }
 
+.section-card-news {
+  border-left: 3px solid var(--accent-secondary);
+}
+
+.section-card-services {
+  border-left: 3px solid var(--accent-secondary);
+}
+
+.section-card-pubs {
+  border-left: 3px solid var(--accent);
+}
+
 .pub-toggle {
   margin-top: 12px;
   display: flex;
