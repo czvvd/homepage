@@ -325,7 +325,7 @@ h2::after {
 }
 
 .site-footer p {
-  color: #5f7385;
+  color: var(--muted);
 }
 
 @media (max-width: 860px) {
