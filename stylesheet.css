@@ -141,8 +141,9 @@ h2::after {
 }
 
 .hero-section {
-  background: linear-gradient(145deg, #ffffff 0%, #f6fbff 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #f9f8ff 100%);
   border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
   border-radius: 22px;
   box-shadow: var(--shadow);
   margin-bottom: 18px;
@@ -175,18 +176,26 @@ h2::after {
   margin: 4px 4px;
   padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid #bfd7ee;
-  background: #f3f9ff;
+  border: 1px solid #d5d0f0;
+  background: #f5f3ff;
 }
 
-.hero-photo-cell {
-  padding: 22px 24px 22px 0 !important;
+.hero-links a.hero-link-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.hero-links a.hero-link-primary:hover {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: #fff;
 }
 
 .hero-photo-cell img {
   border-radius: 18px !important;
   border: 1px solid var(--line);
-  box-shadow: 0 10px 24px rgba(20, 49, 78, 0.14);
+  box-shadow: 0 10px 24px rgba(60, 40, 100, 0.14);
 }
 
 .section-card {
