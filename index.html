@@ -49,6 +49,7 @@
           <td style="padding:16px;width:100%;vertical-align:middle">
             <h2>News</h2>
             <ul class="news-list">
+              <li><span class="news-date">2026.07</span><span>One paper, <strong>PartLLM</strong> for unified 3D part segmentation, is conditionally accepted by SIGGRAPH Asia 2026!</span></li>
               <li><span class="news-date">2026.02</span><span>One paper, <strong>MeshMosaic</strong> for autoregressive mesh generation, is accepted by CVPR 2026!</span></li>
               <li><span class="news-date">2026.01</span><span>One paper, <strong>PartSAM</strong> for scalable part segmentation, is accepted by ICLR 2026!</span></li>
               <li><span class="news-date">2026.01</span><span>One paper, <strong>CoreEditor</strong> for 3D editing, is accepted by IEEE TVCG!</span></li>
@@ -68,6 +69,7 @@
               <button class="pub-btn active" type="button" onclick="showPublications('selected')">Selected Publications</button>
               <button class="pub-btn" type="button" onclick="showPublications('all')">All Publications</button>
             </div>
+            <p class="publication-note">* Equal contribution. † Corresponding author. ‡ Project lead.</p>
           </td>
         </tr>
       </tbody>
@@ -78,6 +80,33 @@
   
 <div id="selected-publications" class="pub-panel">
   <table class="publication-list" style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/partllm.jpg' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">PartLLM: A Unified Multimodal Foundation for 3D Part Segmentation</span>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Yiheng Zhang,
+        Peng Li,
+        Zixing Zhao,
+        Honghua Chen,
+        Yaqing Zhang,
+        Le Wan,
+        Zhiyang Dou,
+        Cheng Lin‡,
+        Yuan Liu†,
+        Mingqiang Wei†,
+        Wenping Wang
+        <br>
+        <em><strong>ACM TOG (SIGGRAPH Asia)</strong>, 2026</em>
+        <p></p>
+      </td>
+    </tr>
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
       <td style="padding:16px;width:30%;vertical-align:middle">
@@ -143,7 +172,7 @@
           <span class="papertitle">GenPC: Zero-shot Point Cloud Completion via 3D Generative Priors</span>
         </a>
         <br>
-        An Li*
+        An Li*,
         <strong>Zhe Zhu*</strong>,
         Mingqiang Wei†
         <br>
@@ -233,6 +262,33 @@
 
 <div id="all-publications" class="pub-panel" style="display:none;">
 <table class="publication-list" style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div style="width:100%; display:flex; align-items:center;justify-content:center;">
+          <img src='images/publication/partllm.jpg' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">PartLLM: A Unified Multimodal Foundation for 3D Part Segmentation</span>
+        <br>
+        <strong>Zhe Zhu</strong>,
+        Yiheng Zhang,
+        Peng Li,
+        Zixing Zhao,
+        Honghua Chen,
+        Yaqing Zhang,
+        Le Wan,
+        Zhiyang Dou,
+        Cheng Lin‡,
+        Yuan Liu†,
+        Mingqiang Wei†,
+        Wenping Wang
+        <br>
+        <em><strong>ACM TOG (SIGGRAPH Asia)</strong>, 2026</em>
+        <p></p>
+      </td>
+    </tr>
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
       <td style="padding:16px;width:30%;vertical-align:middle">
@@ -402,7 +458,7 @@
           <span class="papertitle">GenPC: Zero-shot Point Cloud Completion via 3D Generative Priors</span>
         </a>
         <br>
-        An Li*
+        An Li*,
         <strong>Zhe Zhu*</strong>,
         Mingqiang Wei†
         <br>
