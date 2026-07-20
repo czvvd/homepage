@@ -268,7 +268,7 @@ h2::after {
 .publication-note {
   margin: 10px 0 0;
   color: var(--muted-soft);
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 .pub-panel {
@@ -321,12 +321,13 @@ h2::after {
 }
 
 .publication-list em {
-  color: var(--muted-soft);
-  font-size: 15px;
+  color: var(--muted);
+  font-size: 14.5px;
+  font-style: normal;
 }
 
 .publication-list em strong {
-  color: inherit;
+  color: var(--text);
   font-size: inherit;
   font-weight: 600;
 }
