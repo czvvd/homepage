@@ -237,31 +237,34 @@ h2::after {
 
 .pub-toggle {
   margin-top: 14px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
 }
 
 .pub-btn {
   font-size: 14px;
-  padding: 7px 12px;
-  border: 1px solid var(--line);
-  background: var(--card);
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 0;
+  background: transparent;
   color: var(--muted);
-  border-radius: var(--radius);
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
 
 .pub-btn:hover {
-  border-color: var(--line-strong);
-  color: var(--text);
+  background: #f1f5f9;
+  color: var(--accent-strong);
 }
 
 .pub-btn.active {
-  background: var(--text);
-  color: #fff;
-  border-color: var(--text);
+  background: #eaf1ff;
+  color: var(--accent-strong);
   box-shadow: none;
 }
 
@@ -327,9 +330,21 @@ h2::after {
 }
 
 .publication-list em strong {
-  color: var(--text);
+  color: var(--muted);
   font-size: inherit;
   font-weight: 600;
+}
+
+.publication-list sup,
+.publication-note sup {
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.publication-list sup {
+  margin-left: 1px;
 }
 
 .publication-list td:last-child a {
@@ -373,7 +388,7 @@ h2::after {
   }
 
   .hero-photo-cell img {
-    max-width: 240px !important;
+    max-width: 200px !important;
     margin: 0 auto;
     display: block;
   }
